@@ -138,20 +138,6 @@
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
         }
-
-        .comparison-slider::-webkit-slider-thumb {
-            appearance: none;
-            width: 38px;
-            height: 38px;
-            border-radius: 50%;
-            background: #C5A059;
-            cursor: ew-resize;
-            border: 3px solid #FFFFFF;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23FFFFFF' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='15 18 9 12 15 6'%3E%3C/polyline%3E%3C/svg%3E");
-            background-repeat: no-repeat;
-            background-position: center;
-        }
     </style>
 </head>
 <body class="bg-white text-charcoal-800 font-sans antialiased selection:bg-gold-500 selection:text-white">
@@ -189,10 +175,8 @@
                         Kampanyalar
                         <span class="bg-gold-500 text-white text-[9px] px-1.5 py-0.5 rounded font-bold">Fırsat</span>
                     </a>
-                    <a href="#oncesi-sonrasi" class="text-xs uppercase tracking-widest font-semibold text-charcoal-700 hover:text-gold-600 transition-colors">Sonuçlar</a>
                     <a href="#hakkimizda" class="text-xs uppercase tracking-widest font-semibold text-charcoal-700 hover:text-gold-600 transition-colors">Hakkımızda</a>
-                    <a href="#yorumlar" class="text-xs uppercase tracking-widest font-semibold text-charcoal-700 hover:text-gold-600 transition-colors">Yorumlar</a>
-                    <a href="#iletisim" class="text-xs uppercase tracking-widest font-semibold text-charcoal-700 hover:text-gold-600 transition-colors">İletişim</a>
+                    <a href="#iletisim" class="text-xs uppercase tracking-widest font-semibold text-charcoal-700 hover:text-gold-600 transition-colors">Konum & Harita</a>
                 </nav>
 
                 <!-- Action Button -->
@@ -207,40 +191,16 @@
                 <div class="flex lg:hidden">
                     <button type="button" id="mobile-menu-btn" aria-label="Menüyü Aç" class="text-charcoal-800 hover:text-gold-600 p-2 focus:outline-none">
                         <i data-lucide="menu" class="w-7 h-7" id="menu-icon-open"></i>
-                        <i data-lucide="x" class="w-7 h-7 hidden" id="menu-icon-close"></i>
                     </button>
                 </div>
-            </div>
-        </div>
-
-        <!-- Mobile Dropdown Menu -->
-        <div id="mobile-menu" class="hidden lg:hidden border-t border-cream-200 bg-white/98 px-6 py-6 space-y-4 shadow-xl">
-            <nav class="flex flex-col space-y-3">
-                <a href="#hizmetler" class="mobile-nav-link text-sm uppercase tracking-wider font-semibold text-charcoal-800 hover:text-gold-600 py-2 border-b border-cream-100">Hizmetlerimiz & Fiyatlar</a>
-                <a href="#kampanya" class="mobile-nav-link text-sm uppercase tracking-wider font-semibold text-gold-600 py-2 border-b border-cream-100 flex justify-between items-center">
-                    Özel Kampanyalar <span class="bg-gold-500 text-white text-[10px] px-2 py-0.5 rounded-full">Avantajlı</span>
-                </a>
-                <a href="#oncesi-sonrasi" class="mobile-nav-link text-sm uppercase tracking-wider font-semibold text-charcoal-800 hover:text-gold-600 py-2 border-b border-cream-100">Öncesi & Sonrası Galeri</a>
-                <a href="#hakkimizda" class="mobile-nav-link text-sm uppercase tracking-wider font-semibold text-charcoal-800 hover:text-gold-600 py-2 border-b border-cream-100">Hakkımızda & Salonumuz</a>
-                <a href="#yorumlar" class="mobile-nav-link text-sm uppercase tracking-wider font-semibold text-charcoal-800 hover:text-gold-600 py-2 border-b border-cream-100">Google Danışan Yorumları</a>
-                <a href="#iletisim" class="mobile-nav-link text-sm uppercase tracking-wider font-semibold text-charcoal-800 hover:text-gold-600 py-2">Konum & İletişim</a>
-            </nav>
-            <div class="pt-2">
-                <a href="https://wa.me/905558228989?text=Merhaba,%20HS%20Beauty%20Center%20randevu%20talebi%20olu%C5%9Fturmak%20istiyorum." class="w-full flex items-center justify-center gap-2 py-3 bg-gold-500 text-white text-xs uppercase font-bold tracking-widest rounded-xl shadow-md">
-                    <i data-lucide="message-circle" class="w-4 h-4"></i> Hızlı WhatsApp Randevusu
-                </a>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative min-h-[88vh] flex items-center justify-center bg-cream-50 overflow-hidden pt-6 pb-16 lg:py-24">
-        <div class="absolute top-0 right-0 w-96 h-96 bg-gold-200/30 rounded-full blur-3xl pointer-events-none"></div>
-        <div class="absolute bottom-0 left-0 w-[30rem] h-[30rem] bg-cream-200/60 rounded-full blur-3xl pointer-events-none"></div>
-        
+    <section class="relative min-h-[85vh] flex items-center justify-center bg-cream-50 overflow-hidden pt-6 pb-16 lg:py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                
                 <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
                     <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cream-200 border border-gold-300/60 text-charcoal-700 text-xs font-semibold tracking-wide shadow-sm">
                         <span class="w-2 h-2 rounded-full bg-gold-500 animate-ping"></span>
@@ -260,222 +220,110 @@
                             <i data-lucide="calendar" class="w-4 h-4"></i>
                             <span>Ücretsiz Cilt Analizi & Randevu</span>
                         </a>
-                        <a href="#hizmetler" class="w-full sm:w-auto px-8 py-4 bg-white hover:bg-cream-100 text-charcoal-800 border border-cream-300 font-semibold text-xs sm:text-sm uppercase tracking-widest rounded-full transition-all duration-300 flex items-center justify-center gap-2">
-                            <span>Hizmetleri İncele</span>
-                            <i data-lucide="arrow-right" class="w-4 h-4 text-gold-500"></i>
+                        <a href="#iletisim" class="w-full sm:w-auto px-8 py-4 bg-white hover:bg-cream-100 text-charcoal-800 border border-cream-300 font-semibold text-xs sm:text-sm uppercase tracking-widest rounded-full transition-all duration-300 flex items-center justify-center gap-2">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-gold-500"></i>
+                            <span>Konumu Gör</span>
                         </a>
                     </div>
-
-                    <div class="pt-6 border-t border-cream-300/80 grid grid-cols-3 gap-3 max-w-lg mx-auto lg:mx-0">
-                        <div class="flex items-center gap-2.5 text-left">
-                            <div class="p-2 rounded-lg bg-gold-50 text-gold-600">
-                                <i data-lucide="star" class="w-5 h-5 fill-gold-500"></i>
-                            </div>
-                            <div>
-                                <span class="block font-bold text-sm text-charcoal-900">5.0 / 5</span>
-                                <span class="block text-[11px] text-charcoal-500 font-medium">100+ Gerçek Yorum</span>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center gap-2.5 text-left">
-                            <div class="p-2 rounded-lg bg-gold-50 text-gold-600">
-                                <i data-lucide="shield-check" class="w-5 h-5"></i>
-                            </div>
-                            <div>
-                                <span class="block font-bold text-sm text-charcoal-900">%100 Hijyen</span>
-                                <span class="block text-[11px] text-charcoal-500 font-medium">Steril Ortam</span>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center gap-2.5 text-left">
-                            <div class="p-2 rounded-lg bg-gold-50 text-gold-600">
-                                <i data-lucide="sparkles" class="w-5 h-5"></i>
-                            </div>
-                            <div>
-                                <span class="block font-bold text-sm text-charcoal-900">FDA Onaylı</span>
-                                <span class="block text-[11px] text-charcoal-500 font-medium">Son Teknoloji</span>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
 
                 <div class="lg:col-span-5 relative">
-                    <div class="relative mx-auto max-w-md lg:max-w-none">
-                        <div class="relative rounded-3xl overflow-hidden border-4 border-white shadow-2xl bg-cream-200 aspect-[4/5]">
-                            <img src="unnamed.jpg" 
-                                 alt="HS Beauty Center Salon Ambiyansı" 
-                                 class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-gradient-to-t from-charcoal-900/60 via-transparent to-transparent"></div>
-                            
-                            <div class="absolute bottom-6 left-6 right-6 text-white">
-                                <span class="text-xs uppercase tracking-widest text-gold-300 font-semibold">Premium Deneyim</span>
-                                <p class="font-serif text-lg font-medium">Kişiye Özel Konfor & Huzurlu Atmosfer</p>
-                            </div>
-                        </div>
-
-                        <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-xl border border-cream-200 hidden sm:flex items-center gap-3.5 max-w-xs animate-bounce" style="animation-duration: 4s;">
-                            <div class="w-12 h-12 rounded-full bg-gold-100 flex items-center justify-center text-gold-600 shrink-0">
-                                <i data-lucide="award" class="w-6 h-6"></i>
-                            </div>
-                            <div>
-                                <p class="text-xs font-bold text-charcoal-900">Uzman Estetisyenler</p>
-                                <p class="text-[11px] text-charcoal-500">10+ Yıllık Klinik Deneyim</p>
-                            </div>
-                        </div>
-
-                        <div class="absolute -top-4 -right-4 bg-gold-500 text-white text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full shadow-lg">
-                            İzmir / Bayraklı
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Kampanya Alanı (Promo Banner) -->
-    <section id="kampanya" class="py-12 bg-white relative z-20 -mt-6">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="relative rounded-3xl bg-gradient-to-r from-charcoal-900 via-charcoal-800 to-charcoal-900 text-white p-8 sm:p-12 shadow-2xl border border-gold-500/30 overflow-hidden">
-                <div class="absolute right-0 top-0 translate-x-1/4 -translate-y-1/4 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"></div>
-                
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
-                    <div class="lg:col-span-8 space-y-3 text-center lg:text-left">
-                        <div class="inline-flex items-center gap-2 bg-gold-500/20 text-gold-300 text-xs uppercase font-bold tracking-widest px-3 py-1 rounded-full border border-gold-500/40">
-                            <i data-lucide="flame" class="w-3.5 h-3.5 text-gold-400"></i>
-                            <span>Ayın Öne Çıkan Fırsat Paketi</span>
-                        </div>
-                        <h2 class="font-serif text-2xl sm:text-3xl lg:text-4xl font-semibold text-cream-50 leading-tight">
-                            Tüm Vücut Buz Lazer + <span class="italic text-gold-400">Hydra Cilt Yenileme</span>
-                        </h2>
-                        <p class="text-cream-200 text-sm sm:text-base max-w-2xl font-light">
-                            Bu aya özel 8 seans acısız ütüleme buz lazer paketine, derinlemesine gözenek arındırıcı Hydra Cilt Bakımı hediye! Kontenjanlarla sınırlıdır.
-                        </p>
-                    </div>
-
-                    <div class="lg:col-span-4 flex flex-col items-center lg:items-end justify-center gap-3">
-                        <div class="text-center lg:text-right">
-                            <span class="text-xs uppercase text-charcoal-400 line-through">Normal Fiyat: 6.500 ₺</span>
-                            <div class="text-3xl sm:text-4xl font-serif font-bold text-gold-400">3.999 ₺ <span class="text-xs text-cream-200 font-sans font-normal">'den başlayan</span></div>
-                        </div>
-                        <a href="https://wa.me/905558228989?text=Merhaba,%20Ay%C4%B1n%20%C3%96ne%20%C3%87%C4%B1kan%20Buz%20Lazer%20ve%20Cilt%20Bak%C4%B1m%C4%B1%20kampanyas%C4%B1ndan%20yararlanmak%20istiyorum." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-3.5 bg-gold-500 hover:bg-gold-400 text-charcoal-900 font-bold text-xs uppercase tracking-widest rounded-full shadow-lg transition-all text-center">
-                            Fırsatı Yakala (WhatsApp)
-                        </a>
+                    <div class="relative rounded-3xl overflow-hidden border-4 border-white shadow-2xl bg-cream-200 aspect-[4/5]">
+                        <img src="unnamed.jpg" alt="HS Beauty Center Salon Ambiyansı" class="w-full h-full object-cover object-center">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services & Pricing Section -->
-    <section id="hizmetler" class="py-20 bg-cream-100">
+    <!-- HARİTA VEYA İLETİŞİM ALANI (GOOGLE MAPS INTEGRATION) -->
+    <section id="iletisim" class="py-20 bg-cream-50 border-t border-cream-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-12">
-                <span class="text-gold-600 font-bold text-xs uppercase tracking-[0.25em] block mb-2">Özel Bakım Protokolleri</span>
-                <h2 class="font-serif text-3xl sm:text-4xl text-charcoal-900 font-semibold mb-4">Hizmetlerimiz & Şeffaf Fiyatlandırma</h2>
+                <span class="text-gold-600 font-bold text-xs uppercase tracking-[0.25em] block mb-2">Kolay Ulaşım</span>
+                <h2 class="font-serif text-3xl sm:text-4xl text-charcoal-900 font-semibold mb-4">Salon Konumumuz & İletişim</h2>
                 <div class="w-16 h-0.5 bg-gold-500 mx-auto mb-4"></div>
                 <p class="text-charcoal-600 text-sm sm:text-base">
-                    Cildinizin ve bedeninizin ihtiyaçlarına özel geliştirilmiş profesyonel uygulamalarımızı inceleyin.
+                    Bayraklı Mansuroğlu mahallesinde yer alan merkezimize toplu taşıma veya özel aracınızla rahatlıkla ulaşabilirsiniz.
                 </p>
             </div>
 
-            <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-10" id="service-filters">
-                <button class="filter-btn active px-5 py-2.5 rounded-full text-xs uppercase tracking-wider font-semibold transition-all bg-gold-500 text-white shadow-sm" data-category="all">Tüm Hizmetler</button>
-                <button class="filter-btn px-5 py-2.5 rounded-full text-xs uppercase tracking-wider font-semibold transition-all bg-white text-charcoal-700 hover:bg-gold-50 border border-cream-200" data-category="lazer">Buz Lazer Epilasyon</button>
-                <button class="filter-btn px-5 py-2.5 rounded-full text-xs uppercase tracking-wider font-semibold transition-all bg-white text-charcoal-700 hover:bg-gold-50 border border-cream-200" data-category="cilt">Cilt Bakımı & Medikal</button>
-                <button class="filter-btn px-5 py-2.5 rounded-full text-xs uppercase tracking-wider font-semibold transition-all bg-white text-charcoal-700 hover:bg-gold-50 border border-cream-200" data-category="incelme">Bölgesel İncelme</button>
-                <button class="filter-btn px-5 py-2.5 rounded-full text-xs uppercase tracking-wider font-semibold transition-all bg-white text-charcoal-700 hover:bg-gold-50 border border-cream-200" data-category="estetik">Tırnak & Kalıcı Makyaj</button>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="services-grid">
-                
-                <!-- Service Card 1 -->
-                <div class="service-item bg-white rounded-3xl overflow-hidden shadow-card hover:shadow-soft border border-cream-200 transition-all duration-300 flex flex-col justify-between group" data-category="lazer">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                <!-- Adres Kartı -->
+                <div class="lg:col-span-5 bg-white p-8 rounded-3xl border border-cream-200 shadow-card flex flex-col justify-between space-y-6">
                     <div>
-                        <div class="relative h-52 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80" alt="Buz Lazer Epilasyon Bayraklı" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-md text-charcoal-800 text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">
-                                4 Mevsim Uygulanabilir
-                            </span>
-                        </div>
-                        <div class="p-6 space-y-3">
-                            <div class="flex justify-between items-baseline">
-                                <h3 class="font-serif text-xl font-semibold text-charcoal-900 group-hover:text-gold-600 transition-colors">Buz Başlıklı Lazer Epilasyon</h3>
+                        <h3 class="font-serif text-2xl font-bold text-charcoal-900 mb-6">HS Beauty Center</h3>
+                        
+                        <div class="space-y-5 text-sm">
+                            <div class="flex items-start gap-4">
+                                <div class="p-3 bg-gold-50 text-gold-600 rounded-xl shrink-0">
+                                    <i data-lucide="map-pin" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <strong class="block text-charcoal-900 font-semibold mb-0.5">Açık Adres:</strong>
+                                    <p class="text-charcoal-600 leading-relaxed">
+                                        Mansuroğlu, Dumlupınar Cd. No:31/A,<br>
+                                        35535 Bayraklı / İzmir
+                                    </p>
+                                </div>
                             </div>
-                            <p class="text-charcoal-500 text-xs sm:text-sm leading-relaxed">
-                                Entegre -10°C soğutma başlığı ile acısız, konforlu ve en ince tüylerde dahi maksimum etkili epilasyon deneyimi.
-                            </p>
-                            <ul class="space-y-1.5 pt-2 text-xs text-charcoal-600 border-t border-cream-100">
-                                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-500"></i> Ağrısız & Acısız Sistem</li>
-                                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-500"></i> Kadın & Erkek Danışan Seansları</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="px-6 pb-6 pt-2 flex items-center justify-between border-t border-cream-100 mt-2">
-                        <div>
-                            <span class="block text-[10px] text-charcoal-400 uppercase tracking-wider">Seans Ücreti</span>
-                            <span class="font-serif text-lg font-bold text-gold-600">450 ₺<span class="text-xs text-charcoal-500 font-sans font-normal">'den başlayan</span></span>
-                        </div>
-                        <button onclick="openBookingModal('Buz Başlıklı Lazer Epilasyon')" class="px-4 py-2 bg-cream-100 hover:bg-gold-500 hover:text-white text-charcoal-800 text-xs font-semibold uppercase tracking-wider rounded-xl transition-all">
-                            Randevu Al
-                        </button>
-                    </div>
-                </div>
 
-                <!-- Service Card 2 -->
-                <div class="service-item bg-white rounded-3xl overflow-hidden shadow-card hover:shadow-soft border border-cream-200 transition-all duration-300 flex flex-col justify-between group" data-category="cilt">
-                    <div>
-                        <div class="relative h-52 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1512290900672-1f55a1d7f642?auto=format&fit=crop&w=800&q=80" alt="Medikal Cilt Bakımı Hydrafacial" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            <span class="absolute top-4 left-4 bg-gold-500 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">
-                                En Çok Tercih Edilen
-                            </span>
-                        </div>
-                        <div class="p-6 space-y-3">
-                            <div class="flex justify-between items-baseline">
-                                <h3 class="font-serif text-xl font-semibold text-charcoal-900 group-hover:text-gold-600 transition-colors">Hydra Glow Cilt Bakımı</h3>
+                            <div class="flex items-start gap-4">
+                                <div class="p-3 bg-gold-50 text-gold-600 rounded-xl shrink-0">
+                                    <i data-lucide="phone" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <strong class="block text-charcoal-900 font-semibold mb-0.5">Telefon & WhatsApp:</strong>
+                                    <a href="tel:+905558228989" class="text-gold-600 font-bold hover:underline">0555 822 89 89</a>
+                                </div>
                             </div>
-                            <p class="text-charcoal-500 text-xs sm:text-sm leading-relaxed">
-                                Vakum teknolojisiyle siyah nokta ve gözenek arındırma, hyaluronik asit infüzyonu ve LED terapi ile anında parlaklık.
-                            </p>
-                            <ul class="space-y-1.5 pt-2 text-xs text-charcoal-600 border-t border-cream-100">
-                                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-500"></i> Derinlemesine Gözenek Detoksu</li>
-                                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-500"></i> Kolajen & Nem Dopingi</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="px-6 pb-6 pt-2 flex items-center justify-between border-t border-cream-100 mt-2">
-                        <div>
-                            <span class="block text-[10px] text-charcoal-400 uppercase tracking-wider">Tek Seans</span>
-                            <span class="font-serif text-lg font-bold text-gold-600">750 ₺</span>
-                        </div>
-                        <button onclick="openBookingModal('Hydra Glow Cilt Bakımı')" class="px-4 py-2 bg-cream-100 hover:bg-gold-500 hover:text-white text-charcoal-800 text-xs font-semibold uppercase tracking-wider rounded-xl transition-all">
-                            Randevu Al
-                        </button>
-                    </div>
-                </div>
 
-                <!-- Service Card 3 -->
-                <div class="service-item bg-white rounded-3xl overflow-hidden shadow-card hover:shadow-soft border border-cream-200 transition-all duration-300 flex flex-col justify-between group" data-category="incelme">
-                    <div>
-                        <div class="relative h-52 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=800&q=80" alt="Bölgesel İncelme ve Sıkılaşma" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-md text-charcoal-800 text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">
-                                G5 & Radyofrekans
-                            </span>
-                        </div>
-                        <div class="p-6 space-y-3">
-                            <div class="flex justify-between items-baseline">
-                                <h3 class="font-serif text-xl font-semibold text-charcoal-900 group-hover:text-gold-600 transition-colors">Bölgesel İncelme & Sıkılaşma</h3>
+                            <div class="flex items-start gap-4">
+                                <div class="p-3 bg-gold-50 text-gold-600 rounded-xl shrink-0">
+                                    <i data-lucide="clock" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <strong class="block text-charcoal-900 font-semibold mb-0.5">Calışma Saatleri:</strong>
+                                    <p class="text-charcoal-600">Pazartesi - Cumartesi: 09:30 - 18:30</p>
+                                    <span class="text-xs text-charcoal-400">Pazar: Kapalı</span>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="pt-4">
+                        <a href="https://maps.google.com/?q=Mansuroğlu,+Dumlupınar+Cd.+No:31/A,+35535+Bayraklı/İzmir" target="_blank" rel="noopener noreferrer" class="w-full py-4 bg-charcoal-900 hover:bg-gold-600 text-white font-semibold text-xs uppercase tracking-widest rounded-xl transition-all shadow-md flex items-center justify-center gap-2">
+                            <i data-lucide="navigation" class="w-4 h-4 text-gold-400"></i>
+                            <span>Google Haritalar'da Yol Tarifi Al</span>
+                        </a>
+                    </div>
                 </div>
 
+                <!-- Google Maps iframe -->
+                <div class="lg:col-span-7 rounded-3xl overflow-hidden shadow-card border border-cream-200 min-h-[350px]">
+                    <iframe 
+                        title="HS Beauty Center Bayraklı Konumu"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3124.238416895315!2d27.183025!3d38.4612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd867c4240a5b%3A0x8e83b4823a3cb8ef!2sMansuro%C4%9Flu%2C%20Dumlup%C4%B1nar%20Cd.%20No%3A31%2FA%2C%2035535%20Bayrakl%C4%B1%2F%C4%B0zmir!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str" 
+                        class="w-full h-full min-h-[400px] border-0" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
+    <footer class="bg-charcoal-900 text-cream-200 py-10 border-t border-gold-500/20 text-center text-xs">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>© 2026 HS Beauty Center • Tüm Hakkı Saklıdır. Bayraklı / İzmir</p>
+        </div>
+    </footer>
+
+    <!-- Lucide Icon Renderer -->
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>
