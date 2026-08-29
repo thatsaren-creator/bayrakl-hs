@@ -6,13 +6,11 @@
     <title>HS Beauty Center | Bayraklı İzmir Güzellik & Bakım Merkezi</title>
     <meta name="description" content="İzmir Bayraklı Mansuroğlu'nda lüks ve konforlu güzellik merkezi. Buz lazer epilasyon, medikal cilt bakımı, bölgesel incelme ve kalıcı makyaj uygulamaları.">
     
-    <!-- Open Graph / Meta -->
     <meta property="og:type" content="business.business">
     <meta property="og:title" content="HS Beauty Center - Bayraklı'nın En İyi Güzellik Merkezi">
     <meta property="og:description" content="En yeni teknoloji cihazlar, uzman estetisyenler ve kişiye özel lüks bakım deneyimi Bayraklı'da sizi bekliyor.">
     <meta property="og:image" content="unnamed.jpg">
     
-    <!-- Local SEO Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -50,14 +48,11 @@
     }
     </script>
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
     
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <script>
@@ -138,11 +133,24 @@
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
         }
+
+        .comparison-slider::-webkit-slider-thumb {
+            appearance: none;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: #C5A059;
+            cursor: ew-resize;
+            border: 3px solid #FFFFFF;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23FFFFFF' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='15 18 9 12 15 6'%3E%3C/polyline%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
     </style>
 </head>
 <body class="bg-white text-charcoal-800 font-sans antialiased selection:bg-gold-500 selection:text-white">
 
-    <!-- Top Announcement Bar -->
     <aside aria-label="Duyuru Çubuğu" class="bg-charcoal-900 text-cream-100 text-xs py-2 px-4 border-b border-gold-500/20">
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
             <div class="flex items-center gap-2">
@@ -156,11 +164,9 @@
         </div>
     </aside>
 
-    <!-- Navigation Bar -->
     <header class="sticky top-0 z-50 glass-nav border-b border-cream-200 transition-all duration-300" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
-                <!-- Logo -->
                 <a href="#" class="flex flex-col items-start group">
                     <span class="font-serif text-2xl sm:text-3xl tracking-widest font-bold text-charcoal-900 group-hover:text-gold-600 transition-colors">
                         HS <span class="font-light italic text-gold-500">BEAUTY</span>
@@ -168,7 +174,6 @@
                     <span class="text-[9px] uppercase tracking-[0.35em] text-charcoal-500 font-medium -mt-1 pl-0.5">Center • Bayraklı</span>
                 </a>
 
-                <!-- Desktop Menu -->
                 <nav class="hidden lg:flex items-center space-x-8">
                     <a href="#hizmetler" class="text-xs uppercase tracking-widest font-semibold text-charcoal-700 hover:text-gold-600 transition-colors">Hizmetlerimiz</a>
                     <a href="#kampanya" class="text-xs uppercase tracking-widest font-semibold text-charcoal-700 hover:text-gold-600 transition-colors flex items-center gap-1.5">
@@ -179,151 +184,5 @@
                     <a href="#iletisim" class="text-xs uppercase tracking-widest font-semibold text-charcoal-700 hover:text-gold-600 transition-colors">Konum & Harita</a>
                 </nav>
 
-                <!-- Action Button -->
                 <div class="hidden sm:flex items-center gap-3">
-                    <a href="https://wa.me/905558228989?text=Merhaba,%20HS%20Beauty%20Center%20Bayrakl%C4%B1%20i%C3%A7in%20randevu%20bilgisi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="relative inline-flex items-center justify-center px-6 py-2.5 text-xs font-semibold uppercase tracking-wider text-white bg-gold-500 hover:bg-gold-600 rounded-full transition-all duration-300 shadow-md hover:shadow-gold-glow hover:-translate-y-0.5 group">
-                        <i data-lucide="message-circle" class="w-4 h-4 mr-2 group-hover:scale-110 transition-transform"></i>
-                        <span>WhatsApp Randevu</span>
-                    </a>
-                </div>
-
-                <!-- Mobile Menu Toggle Button -->
-                <div class="flex lg:hidden">
-                    <button type="button" id="mobile-menu-btn" aria-label="Menüyü Aç" class="text-charcoal-800 hover:text-gold-600 p-2 focus:outline-none">
-                        <i data-lucide="menu" class="w-7 h-7" id="menu-icon-open"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="relative min-h-[85vh] flex items-center justify-center bg-cream-50 overflow-hidden pt-6 pb-16 lg:py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cream-200 border border-gold-300/60 text-charcoal-700 text-xs font-semibold tracking-wide shadow-sm">
-                        <span class="w-2 h-2 rounded-full bg-gold-500 animate-ping"></span>
-                        <span>Mansuroğlu, Dumlupınar Cd. No:31/A, 35535 Bayraklı/İzmir</span>
-                    </div>
-
-                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl text-charcoal-900 leading-[1.15] font-semibold">
-                        Güzelliğinizi Öne Çıkaran <span class="italic font-light text-gold-600 font-serif block sm:inline">Lüks & Bilimsel</span> Dokunuş.
-                    </h1>
-
-                    <p class="text-charcoal-600 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
-                        Bayraklı’nın kalbinde; son teknoloji FDA onaylı buz lazer cihazları, medikal cilt yenileme protokolleri ve uzman kadromuz ile aradığınız pürüzsüz ışıltıyı keşfedin.
-                    </p>
-
-                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
-                        <a href="https://wa.me/905558228989?text=Merhaba,%20%C3%BCcretsiz%20cilt%20analizi%20ve%20randevu%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-4 bg-gold-500 hover:bg-gold-600 text-white font-semibold text-xs sm:text-sm uppercase tracking-widest rounded-full shadow-lg hover:shadow-gold-glow transition-all duration-300 flex items-center justify-center gap-2.5">
-                            <i data-lucide="calendar" class="w-4 h-4"></i>
-                            <span>Ücretsiz Cilt Analizi & Randevu</span>
-                        </a>
-                        <a href="#iletisim" class="w-full sm:w-auto px-8 py-4 bg-white hover:bg-cream-100 text-charcoal-800 border border-cream-300 font-semibold text-xs sm:text-sm uppercase tracking-widest rounded-full transition-all duration-300 flex items-center justify-center gap-2">
-                            <i data-lucide="map-pin" class="w-4 h-4 text-gold-500"></i>
-                            <span>Konumu Gör</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="lg:col-span-5 relative">
-                    <div class="relative rounded-3xl overflow-hidden border-4 border-white shadow-2xl bg-cream-200 aspect-[4/5]">
-                        <img src="unnamed.jpg" alt="HS Beauty Center Salon Ambiyansı" class="w-full h-full object-cover object-center">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- HARİTA VEYA İLETİŞİM ALANI (GOOGLE MAPS INTEGRATION) -->
-    <section id="iletisim" class="py-20 bg-cream-50 border-t border-cream-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-12">
-                <span class="text-gold-600 font-bold text-xs uppercase tracking-[0.25em] block mb-2">Kolay Ulaşım</span>
-                <h2 class="font-serif text-3xl sm:text-4xl text-charcoal-900 font-semibold mb-4">Salon Konumumuz & İletişim</h2>
-                <div class="w-16 h-0.5 bg-gold-500 mx-auto mb-4"></div>
-                <p class="text-charcoal-600 text-sm sm:text-base">
-                    Bayraklı Mansuroğlu mahallesinde yer alan merkezimize toplu taşıma veya özel aracınızla rahatlıkla ulaşabilirsiniz.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-                <!-- Adres Kartı -->
-                <div class="lg:col-span-5 bg-white p-8 rounded-3xl border border-cream-200 shadow-card flex flex-col justify-between space-y-6">
-                    <div>
-                        <h3 class="font-serif text-2xl font-bold text-charcoal-900 mb-6">HS Beauty Center</h3>
-                        
-                        <div class="space-y-5 text-sm">
-                            <div class="flex items-start gap-4">
-                                <div class="p-3 bg-gold-50 text-gold-600 rounded-xl shrink-0">
-                                    <i data-lucide="map-pin" class="w-6 h-6"></i>
-                                </div>
-                                <div>
-                                    <strong class="block text-charcoal-900 font-semibold mb-0.5">Açık Adres:</strong>
-                                    <p class="text-charcoal-600 leading-relaxed">
-                                        Mansuroğlu, Dumlupınar Cd. No:31/A,<br>
-                                        35535 Bayraklı / İzmir
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start gap-4">
-                                <div class="p-3 bg-gold-50 text-gold-600 rounded-xl shrink-0">
-                                    <i data-lucide="phone" class="w-6 h-6"></i>
-                                </div>
-                                <div>
-                                    <strong class="block text-charcoal-900 font-semibold mb-0.5">Telefon & WhatsApp:</strong>
-                                    <a href="tel:+905558228989" class="text-gold-600 font-bold hover:underline">0555 822 89 89</a>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start gap-4">
-                                <div class="p-3 bg-gold-50 text-gold-600 rounded-xl shrink-0">
-                                    <i data-lucide="clock" class="w-6 h-6"></i>
-                                </div>
-                                <div>
-                                    <strong class="block text-charcoal-900 font-semibold mb-0.5">Calışma Saatleri:</strong>
-                                    <p class="text-charcoal-600">Pazartesi - Cumartesi: 09:30 - 18:30</p>
-                                    <span class="text-xs text-charcoal-400">Pazar: Kapalı</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pt-4">
-                        <a href="https://maps.google.com/?q=Mansuroğlu,+Dumlupınar+Cd.+No:31/A,+35535+Bayraklı/İzmir" target="_blank" rel="noopener noreferrer" class="w-full py-4 bg-charcoal-900 hover:bg-gold-600 text-white font-semibold text-xs uppercase tracking-widest rounded-xl transition-all shadow-md flex items-center justify-center gap-2">
-                            <i data-lucide="navigation" class="w-4 h-4 text-gold-400"></i>
-                            <span>Google Haritalar'da Yol Tarifi Al</span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Google Maps iframe -->
-                <div class="lg:col-span-7 rounded-3xl overflow-hidden shadow-card border border-cream-200 min-h-[350px]">
-                    <iframe 
-                        title="HS Beauty Center Bayraklı Konumu"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3124.238416895315!2d27.183025!3d38.4612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd867c4240a5b%3A0x8e83b4823a3cb8ef!2sMansuro%C4%9Flu%2C%20Dumlup%C4%B1nar%20Cd.%20No%3A31%2FA%2C%2035535%20Bayrakl%C4%B1%2F%C4%B0zmir!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str" 
-                        class="w-full h-full min-h-[400px] border-0" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-charcoal-900 text-cream-200 py-10 border-t border-gold-500/20 text-center text-xs">
-        <div class="max-w-7xl mx-auto px-4">
-            <p>© 2026 HS Beauty Center • Tüm Hakkı Saklıdır. Bayraklı / İzmir</p>
-        </div>
-    </footer>
-
-    <!-- Lucide Icon Renderer -->
-    <script>
-        lucide.createIcons();
-    </script>
-</body>
-</html>
+                    <a href="https://wa.me/905558228989?text=Merhaba,%20HS%20Beauty%20Center%20Bayrakl%C4%B1%20i%C3%A7in%20randevu%20bilgisi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="relative inline-flex items-center justify-center px-6 py-2.5 text-xs font-semibold uppercase tracking-wider text
